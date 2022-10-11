@@ -9,7 +9,7 @@ from wxcloudrun.models import Counters
 logger = logging.getLogger('log')
 
 
-def echo(request, _):
+def echo(request):
     string = request.GET.get('str', '')
     return JsonResponse({'code': 0, 'data': string},
                         json_dumps_params={'ensure_ascii': False})
