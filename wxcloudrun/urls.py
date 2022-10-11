@@ -24,5 +24,5 @@ urlpatterns = (
     # 获取主页
     url(r'(/)?$', views.index),
 
-    url('/echo', views.echo),
+    url('echo', views.echo),
 )
